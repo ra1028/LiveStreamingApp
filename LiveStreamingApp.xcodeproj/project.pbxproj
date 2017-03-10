@@ -228,7 +228,7 @@
 				TargetAttributes = {
 					6B6B08A31E61FCBC00DD6561 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 74E462K49E;
+						DevelopmentTeam = 35SS6N9UMP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -454,11 +454,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 74E462K49E;
+				DEVELOPMENT_TEAM = 35SS6N9UMP;
 				INFOPLIST_FILE = LiveStreamingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aoyama.LiveStreamingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryo.LiveStreamingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -470,11 +470,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 74E462K49E;
+				DEVELOPMENT_TEAM = 35SS6N9UMP;
 				INFOPLIST_FILE = LiveStreamingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aoyama.LiveStreamingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryo.LiveStreamingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

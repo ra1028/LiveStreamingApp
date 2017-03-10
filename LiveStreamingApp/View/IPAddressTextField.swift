@@ -40,7 +40,7 @@ private extension IPAddressTextField {
         font = .systemFont(ofSize: 12)
         textColor = .black
         backgroundColor = UIColor(white: 1, alpha: 0.8)
-        clearButtonMode = .always
+        clearButtonMode = .whileEditing
         keyboardAppearance = .dark
         returnKeyType = .join
     }
