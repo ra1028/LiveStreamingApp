@@ -1,0 +1,36 @@
+PODS:
+  - lf (0.5.12):
+    - XCGLogger (~> 4.0.0)
+  - ReactiveCocoa (5.0.1):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Result (3.2.1)
+  - XCGLogger (4.0.0):
+    - XCGLogger/Core (= 4.0.0)
+  - XCGLogger/Core (4.0.0)
+
+DEPENDENCIES:
+  - lf (from `https://github.com/shogo4405/lf.swift.git`, branch `master`)
+  - ReactiveCocoa (~> 5.0.0)
+
+EXTERNAL SOURCES:
+  lf:
+    :branch: master
+    :git: https://github.com/shogo4405/lf.swift.git
+
+CHECKOUT OPTIONS:
+  lf:
+    :commit: 3d2eec080f5e74c61d58375d5464c371950968a0
+    :git: https://github.com/shogo4405/lf.swift.git
+
+SPEC CHECKSUMS:
+  lf: 719d1b0f417f1d0672e639bf46cb81661b241d51
+  ReactiveCocoa: f577006aa6c7b0b08020109ebaae3b77ada00adc
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
+
+PODFILE CHECKSUM: 3373ebdf6438326e95d9bbeab68e8c668c80dfb8
+
+COCOAPODS: 1.2.0

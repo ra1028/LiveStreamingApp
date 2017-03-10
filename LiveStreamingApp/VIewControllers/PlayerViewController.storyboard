@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XVY-6U-9F7">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="p4a-dg-1eq">
+            <objects>
+                <viewController id="XVY-6U-9F7" customClass="PlayerViewController" customModule="LiveStreamingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hv0-s0-hp6"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWI-0T-4Sp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8i8-Mx-nnO">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXb-u8-7zA">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-yb-9HJ">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="325"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.39882535460992907" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="KpE-01-4lp"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KXb-u8-7zA" firstAttribute="top" secondItem="8i8-Mx-nnO" secondAttribute="top" id="PaP-ro-uMn"/>
+                            <constraint firstItem="h7s-yb-9HJ" firstAttribute="leading" secondItem="8i8-Mx-nnO" secondAttribute="leading" id="RwN-E7-kON"/>
+                            <constraint firstAttribute="bottom" secondItem="h7s-yb-9HJ" secondAttribute="bottom" constant="50" id="XfR-Ns-z83"/>
+                            <constraint firstAttribute="trailing" secondItem="KXb-u8-7zA" secondAttribute="trailing" id="adJ-zD-AEF"/>
+                            <constraint firstAttribute="bottom" secondItem="KXb-u8-7zA" secondAttribute="bottom" id="pzt-pS-UPU"/>
+                            <constraint firstItem="h7s-yb-9HJ" firstAttribute="top" secondItem="8i8-Mx-nnO" secondAttribute="top" id="qlC-zn-W1b"/>
+                            <constraint firstItem="KXb-u8-7zA" firstAttribute="leading" secondItem="8i8-Mx-nnO" secondAttribute="leading" id="quL-Pj-Q35"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerContainerView" destination="KXb-u8-7zA" id="gVT-3y-XXo"/>
+                        <outlet property="textView" destination="h7s-yb-9HJ" id="gg1-1U-6Dk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x58-p5-FHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.838080959520241" y="44"/>
+        </scene>
+    </scenes>
+</document>

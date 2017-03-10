@@ -1,0 +1,6 @@
+framework module lf {
+  umbrella header "lf-umbrella.h"
+
+  export *
+  module * { export * }
+}

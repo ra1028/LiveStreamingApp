@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B6B08A81E61FCBC00DD6561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08A71E61FCBC00DD6561 /* AppDelegate.swift */; };
+		6B6B08AF1E61FCBC00DD6561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B08AE1E61FCBC00DD6561 /* Assets.xcassets */; };
+		6B6B08B21E61FCBC00DD6561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B08B01E61FCBC00DD6561 /* LaunchScreen.storyboard */; };
+		6B6B08BC1E61FF1900DD6561 /* BroadcastViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B08BA1E61FF1900DD6561 /* BroadcastViewController.storyboard */; };
+		6B6B08BD1E61FF1900DD6561 /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08BB1E61FF1900DD6561 /* BroadcastViewController.swift */; };
+		6B6B08C01E61FFBC00DD6561 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08BF1E61FFBC00DD6561 /* StoryboardInstantiatable.swift */; };
+		6B6B08C31E62016D00DD6561 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08C21E62016D00DD6561 /* UIViewControllerExtension.swift */; };
+		6B6B08C51E620A6600DD6561 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08C41E620A6600DD6561 /* UIViewExtension.swift */; };
+		6B6B08C71E620B1F00DD6561 /* NSLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08C61E620B1F00DD6561 /* NSLayoutConstraints.swift */; };
+		6B6B08CA1E62147F00DD6561 /* BroadcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08C91E62147F00DD6561 /* BroadcastViewModel.swift */; };
+		6B6B08CC1E62178900DD6561 /* GLLFViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08CB1E62178900DD6561 /* GLLFViewExtension.swift */; };
+		6B6B08CF1E6219A600DD6561 /* ScopedCompositeDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B08CE1E6219A600DD6561 /* ScopedCompositeDisposable.swift */; };
+		6BA897B41E6C8F6500121698 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897B31E6C8F6500121698 /* PlayerViewController.swift */; };
+		6BA897B61E6C8F9200121698 /* PlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA897B51E6C8F9200121698 /* PlayerViewController.storyboard */; };
+		6BA897BC1E6CA20500121698 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897BB1E6CA20500121698 /* UIScrollViewExtension.swift */; };
+		6BA897BE1E6DD0DB00121698 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897BD1E6DD0DB00121698 /* URLSessionExtension.swift */; };
+		6BA897C01E6DEEBA00121698 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897BF1E6DEEBA00121698 /* PlayerViewModel.swift */; };
+		6BA897C21E6F212600121698 /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897C11E6F212600121698 /* AVAssetExtension.swift */; };
+		6BA897C41E6F22BD00121698 /* AVPlayerLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897C31E6F22BD00121698 /* AVPlayerLayerExtension.swift */; };
+		6BA897D51E7061D600121698 /* PlayerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897D41E7061D600121698 /* PlayerLayerView.swift */; };
+		6BA897D71E706A7500121698 /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897D61E706A7500121698 /* UIResponderExtension.swift */; };
+		6BA897D91E706ED800121698 /* IPAddressTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897D81E706ED800121698 /* IPAddressTextField.swift */; };
+		6BA897DD1E7087B600121698 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA897DC1E7087B600121698 /* RootViewController.swift */; };
+		6BA897DF1E708A8400121698 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA897DE1E708A8400121698 /* RootViewController.storyboard */; };
+		897192355EB16B82CBCECDB5 /* Pods_LiveStreamingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222BFE3C6171EF31B3AA0996 /* Pods_LiveStreamingApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		222BFE3C6171EF31B3AA0996 /* Pods_LiveStreamingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStreamingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6B08A41E61FCBC00DD6561 /* LiveStreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveStreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6B08A71E61FCBC00DD6561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B6B08AE1E61FCBC00DD6561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B6B08B11E61FCBC00DD6561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B6B08B31E61FCBC00DD6561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6B08BA1E61FF1900DD6561 /* BroadcastViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BroadcastViewController.storyboard; sourceTree = "<group>"; };
+		6B6B08BB1E61FF1900DD6561 /* BroadcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
+		6B6B08BF1E61FFBC00DD6561 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		6B6B08C21E62016D00DD6561 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		6B6B08C41E620A6600DD6561 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		6B6B08C61E620B1F00DD6561 /* NSLayoutConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraints.swift; sourceTree = "<group>"; };
+		6B6B08C91E62147F00DD6561 /* BroadcastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastViewModel.swift; sourceTree = "<group>"; };
+		6B6B08CB1E62178900DD6561 /* GLLFViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLLFViewExtension.swift; sourceTree = "<group>"; };
+		6B6B08CE1E6219A600DD6561 /* ScopedCompositeDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopedCompositeDisposable.swift; sourceTree = "<group>"; };
+		6BA897B31E6C8F6500121698 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		6BA897B51E6C8F9200121698 /* PlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerViewController.storyboard; sourceTree = "<group>"; };
+		6BA897BB1E6CA20500121698 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		6BA897BD1E6DD0DB00121698 /* URLSessionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		6BA897BF1E6DEEBA00121698 /* PlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		6BA897C11E6F212600121698 /* AVAssetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
+		6BA897C31E6F22BD00121698 /* AVPlayerLayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerLayerExtension.swift; sourceTree = "<group>"; };
+		6BA897D41E7061D600121698 /* PlayerLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLayerView.swift; sourceTree = "<group>"; };
+		6BA897D61E706A7500121698 /* UIResponderExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
+		6BA897D81E706ED800121698 /* IPAddressTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTextField.swift; sourceTree = "<group>"; };
+		6BA897DC1E7087B600121698 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6BA897DE1E708A8400121698 /* RootViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
+		B6DDCDF6BF0A80224288035C /* Pods-LiveStreamingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamingApp/Pods-LiveStreamingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F5B49FBDC138231D851D62D5 /* Pods-LiveStreamingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamingApp/Pods-LiveStreamingApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B6B08A11E61FCBC00DD6561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897192355EB16B82CBCECDB5 /* Pods_LiveStreamingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165DA0A0855BEDE2BF6578BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222BFE3C6171EF31B3AA0996 /* Pods_LiveStreamingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E111BE9558B1FD7E2DAB0CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6DDCDF6BF0A80224288035C /* Pods-LiveStreamingApp.debug.xcconfig */,
+				F5B49FBDC138231D851D62D5 /* Pods-LiveStreamingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B6B089B1E61FCBC00DD6561 = {
+			isa = PBXGroup;
+			children = (
+				6B6B08A61E61FCBC00DD6561 /* LiveStreamingApp */,
+				6B6B08A51E61FCBC00DD6561 /* Products */,
+				2E111BE9558B1FD7E2DAB0CE /* Pods */,
+				165DA0A0855BEDE2BF6578BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B6B08A51E61FCBC00DD6561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B08A41E61FCBC00DD6561 /* LiveStreamingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B6B08A61E61FCBC00DD6561 /* LiveStreamingApp */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B08B91E61FF1900DD6561 /* VIewControllers */,
+				6B6B08C81E62147300DD6561 /* ViewModels */,
+				6BA897C51E6F2DE500121698 /* View */,
+				6B6B08BE1E61FF4300DD6561 /* Protocols */,
+				6B6B08C11E62016200DD6561 /* Extensions */,
+				6B6B08CD1E62199500DD6561 /* Utilities */,
+				6B6B08A71E61FCBC00DD6561 /* AppDelegate.swift */,
+				6B6B08AE1E61FCBC00DD6561 /* Assets.xcassets */,
+				6B6B08B01E61FCBC00DD6561 /* LaunchScreen.storyboard */,
+				6B6B08B31E61FCBC00DD6561 /* Info.plist */,
+			);
+			path = LiveStreamingApp;
+			sourceTree = "<group>";
+		};
+		6B6B08B91E61FF1900DD6561 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BA897B31E6C8F6500121698 /* PlayerViewController.swift */,
+				6BA897B51E6C8F9200121698 /* PlayerViewController.storyboard */,
+				6B6B08BB1E61FF1900DD6561 /* BroadcastViewController.swift */,
+				6B6B08BA1E61FF1900DD6561 /* BroadcastViewController.storyboard */,
+				6BA897DC1E7087B600121698 /* RootViewController.swift */,
+				6BA897DE1E708A8400121698 /* RootViewController.storyboard */,
+			);
+			path = VIewControllers;
+			sourceTree = "<group>";
+		};
+		6B6B08BE1E61FF4300DD6561 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B08BF1E61FFBC00DD6561 /* StoryboardInstantiatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6B6B08C11E62016200DD6561 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B08C21E62016D00DD6561 /* UIViewControllerExtension.swift */,
+				6B6B08C41E620A6600DD6561 /* UIViewExtension.swift */,
+				6B6B08C61E620B1F00DD6561 /* NSLayoutConstraints.swift */,
+				6B6B08CB1E62178900DD6561 /* GLLFViewExtension.swift */,
+				6BA897BB1E6CA20500121698 /* UIScrollViewExtension.swift */,
+				6BA897BD1E6DD0DB00121698 /* URLSessionExtension.swift */,
+				6BA897C11E6F212600121698 /* AVAssetExtension.swift */,
+				6BA897C31E6F22BD00121698 /* AVPlayerLayerExtension.swift */,
+				6BA897D61E706A7500121698 /* UIResponderExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B6B08C81E62147300DD6561 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6BA897BF1E6DEEBA00121698 /* PlayerViewModel.swift */,
+				6B6B08C91E62147F00DD6561 /* BroadcastViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6B6B08CD1E62199500DD6561 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B08CE1E6219A600DD6561 /* ScopedCompositeDisposable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6BA897C51E6F2DE500121698 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BA897D41E7061D600121698 /* PlayerLayerView.swift */,
+				6BA897D81E706ED800121698 /* IPAddressTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B6B08A31E61FCBC00DD6561 /* LiveStreamingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6B08B61E61FCBC00DD6561 /* Build configuration list for PBXNativeTarget "LiveStreamingApp" */;
+			buildPhases = (
+				AB0091ECA6E0BE472BC9C302 /* [CP] Check Pods Manifest.lock */,
+				6B6B08A01E61FCBC00DD6561 /* Sources */,
+				6B6B08A11E61FCBC00DD6561 /* Frameworks */,
+				6B6B08A21E61FCBC00DD6561 /* Resources */,
+				2FD6A437B1A21D38E27888FD /* [CP] Embed Pods Frameworks */,
+				3FA4CD4F9477CBFCEAF29A49 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveStreamingApp;
+			productName = LiveStreamingApp;
+			productReference = 6B6B08A41E61FCBC00DD6561 /* LiveStreamingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B6B089C1E61FCBC00DD6561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ryo Aoyama";
+				TargetAttributes = {
+					6B6B08A31E61FCBC00DD6561 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 74E462K49E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6B6B089F1E61FCBC00DD6561 /* Build configuration list for PBXProject "LiveStreamingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B6B089B1E61FCBC00DD6561;
+			productRefGroup = 6B6B08A51E61FCBC00DD6561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B6B08A31E61FCBC00DD6561 /* LiveStreamingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B6B08A21E61FCBC00DD6561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6B08B21E61FCBC00DD6561 /* LaunchScreen.storyboard in Resources */,
+				6B6B08AF1E61FCBC00DD6561 /* Assets.xcassets in Resources */,
+				6BA897B61E6C8F9200121698 /* PlayerViewController.storyboard in Resources */,
+				6BA897DF1E708A8400121698 /* RootViewController.storyboard in Resources */,
+				6B6B08BC1E61FF1900DD6561 /* BroadcastViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD6A437B1A21D38E27888FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStreamingApp/Pods-LiveStreamingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA4CD4F9477CBFCEAF29A49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStreamingApp/Pods-LiveStreamingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0091ECA6E0BE472BC9C302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B6B08A01E61FCBC00DD6561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6B08CA1E62147F00DD6561 /* BroadcastViewModel.swift in Sources */,
+				6B6B08CF1E6219A600DD6561 /* ScopedCompositeDisposable.swift in Sources */,
+				6BA897DD1E7087B600121698 /* RootViewController.swift in Sources */,
+				6B6B08C51E620A6600DD6561 /* UIViewExtension.swift in Sources */,
+				6B6B08CC1E62178900DD6561 /* GLLFViewExtension.swift in Sources */,
+				6BA897C01E6DEEBA00121698 /* PlayerViewModel.swift in Sources */,
+				6BA897C21E6F212600121698 /* AVAssetExtension.swift in Sources */,
+				6BA897D71E706A7500121698 /* UIResponderExtension.swift in Sources */,
+				6BA897D91E706ED800121698 /* IPAddressTextField.swift in Sources */,
+				6BA897BC1E6CA20500121698 /* UIScrollViewExtension.swift in Sources */,
+				6B6B08C31E62016D00DD6561 /* UIViewControllerExtension.swift in Sources */,
+				6B6B08C71E620B1F00DD6561 /* NSLayoutConstraints.swift in Sources */,
+				6B6B08C01E61FFBC00DD6561 /* StoryboardInstantiatable.swift in Sources */,
+				6BA897BE1E6DD0DB00121698 /* URLSessionExtension.swift in Sources */,
+				6BA897C41E6F22BD00121698 /* AVPlayerLayerExtension.swift in Sources */,
+				6B6B08BD1E61FF1900DD6561 /* BroadcastViewController.swift in Sources */,
+				6B6B08A81E61FCBC00DD6561 /* AppDelegate.swift in Sources */,
+				6BA897D51E7061D600121698 /* PlayerLayerView.swift in Sources */,
+				6BA897B41E6C8F6500121698 /* PlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B6B08B01E61FCBC00DD6561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6B08B11E61FCBC00DD6561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B6B08B41E61FCBC00DD6561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B6B08B51E61FCBC00DD6561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B6B08B71E61FCBC00DD6561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6DDCDF6BF0A80224288035C /* Pods-LiveStreamingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 74E462K49E;
+				INFOPLIST_FILE = LiveStreamingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aoyama.LiveStreamingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6B6B08B81E61FCBC00DD6561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5B49FBDC138231D851D62D5 /* Pods-LiveStreamingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 74E462K49E;
+				INFOPLIST_FILE = LiveStreamingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aoyama.LiveStreamingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B6B089F1E61FCBC00DD6561 /* Build configuration list for PBXProject "LiveStreamingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6B08B41E61FCBC00DD6561 /* Debug */,
+				6B6B08B51E61FCBC00DD6561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B6B08B61E61FCBC00DD6561 /* Build configuration list for PBXNativeTarget "LiveStreamingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6B08B71E61FCBC00DD6561 /* Debug */,
+				6B6B08B81E61FCBC00DD6561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B6B089C1E61FCBC00DD6561 /* Project object */;
+}

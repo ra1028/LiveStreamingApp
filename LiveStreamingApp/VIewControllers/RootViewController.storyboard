@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wle-4X-Cyq">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="3Kf-FK-6E7">
+            <objects>
+                <viewController id="wle-4X-Cyq" customClass="RootViewController" customModule="LiveStreamingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qx6-rO-h9F"/>
+                        <viewControllerLayoutGuide type="bottom" id="ufr-s5-b2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dVO-3d-90z">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpM-ta-c9c">
+                                <rect key="frame" x="260" y="124.5" width="147" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM8-M4-5hv">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="Player">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ay8-Ii-XhB">
+                                        <rect key="frame" x="0.0" y="78" width="147" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="Broadcast">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ay8-Ii-XhB" secondAttribute="trailing" id="7QI-4z-6cQ"/>
+                                    <constraint firstItem="Ay8-Ii-XhB" firstAttribute="leading" secondItem="mpM-ta-c9c" secondAttribute="leading" id="FYD-Jd-e78"/>
+                                    <constraint firstItem="GM8-M4-5hv" firstAttribute="top" secondItem="mpM-ta-c9c" secondAttribute="top" id="WcA-46-il0"/>
+                                    <constraint firstAttribute="trailing" secondItem="GM8-M4-5hv" secondAttribute="trailing" id="f45-lb-BKu"/>
+                                    <constraint firstItem="Ay8-Ii-XhB" firstAttribute="top" secondItem="GM8-M4-5hv" secondAttribute="bottom" constant="30" id="iTR-lh-N1d"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ay8-Ii-XhB" secondAttribute="bottom" id="opz-z5-npx"/>
+                                    <constraint firstItem="GM8-M4-5hv" firstAttribute="leading" secondItem="mpM-ta-c9c" secondAttribute="leading" id="sw6-ti-sm0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mpM-ta-c9c" firstAttribute="centerX" secondItem="dVO-3d-90z" secondAttribute="centerX" id="Vjx-jf-it2"/>
+                            <constraint firstItem="mpM-ta-c9c" firstAttribute="centerY" secondItem="dVO-3d-90z" secondAttribute="centerY" id="m4N-LE-znh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="broadcastButton" destination="Ay8-Ii-XhB" id="pJY-ah-9hA"/>
+                        <outlet property="playerButton" destination="GM8-M4-5hv" id="jlg-nt-5VH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4X-Ki-ghc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="-23"/>
+        </scene>
+    </scenes>
+</document>
